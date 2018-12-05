@@ -1,4 +1,5 @@
-import { ApplicationRecord } from './application_record';
+import { ApplicationRecord } from './application_record'
+import { attr } from 'spraypaint'
 
 export const Post = ApplicationRecord.extend({
   static: {
