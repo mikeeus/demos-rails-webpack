@@ -1,6 +1,8 @@
 class PostResource < Graphiti::Resource
-  self.adapter = Graphiti::Adapters::ActiveRecord
   include ActionView::Helpers::TextHelper
+
+  self.adapter = Graphiti::Adapters::ActiveRecord
+  primary_endpoint '/api/v1/posts'
 
   attribute :title, :string
   attribute :content, :string do
